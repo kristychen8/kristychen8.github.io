@@ -1,2 +1,2 @@
 # kristychen8.github.io
-Personal website
+Kristy Chen's Personal Website
