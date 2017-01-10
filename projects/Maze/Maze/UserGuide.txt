@@ -1,0 +1,28 @@
+
+||||||||||||||||
+| Objective:   |
+||||||||||||||||
+
+Solve the maze.
+
+||||||||||||||||
+| How †o Play: |
+||||||||||||||||
+
+As the game is running:
+
+Press 'p' : to traverse the maze manually with 'up' & 'down' & 'right' & 'left' arrow keys
+Press 'd' : to do depth first search
+Press 'b' : to do breadth first search
+Press 'r' : to generate a new random maze to solve
+Press 'c' : to clear and restart the current maze
+
+
+|||||||||||||||||||||||||||||||
+| Extra Credit that was done: |
+|||||||||||||||||||||||||||||||
+
+
+Allow the user the ability to start a new maze without restarting the program.
+Allow users to clear current path.
+Pop up window appears when the player solves the maze manually.

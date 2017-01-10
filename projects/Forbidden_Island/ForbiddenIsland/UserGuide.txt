@@ -1,0 +1,101 @@
+
+// interface arith
+interface IArith {
+    // accept method for the interface
+    <R> R accept(IArithVisitor<R> v);
+}
+
+// visitor of arith
+interface IArithVisitor<R> {
+    // visits Const
+    R vConst(Const c);
+    // visits Formula
+    R vFormula(Formula f);
+}
+
+// class constant
+class Const implements IArith {
+    // accept method
+    public <R> R accept(IArithVisitor<R> v) {
+        return v.vConst(this);
+    }
+}
+
+// class formula 
+class Formula implements IArith {
+    }
+    // accept method
+    public <R> R accept(IArithVisitor<R> v) {
+        return v.vFormula(this);
+    }
+}
+
+// interface that describe all function objects 
+interface IFunc2<A1, A2, R> {
+    R apply(A1 a1, A2 a2);
+}
+
+// plus method
+class Plus implements IFunc2<Double, Double, Double> {
+    // addition
+    public Double apply(Double num, Double num2) {
+        return num + num2;
+    }
+}
+
+
+// visits IArith and evaluates tree to a Double
+class EvalVisitor implements IArithVisitor<Double> {
+    // visit Const
+    public Double vConst(Const c) {
+        return c.num;
+    }
+    // visit Formula
+    public Double vFormula(Formula f) {
+        return f.fun.apply(f.left.accept(this), f.right.accept(this));
+    }
+}
+
+// visits IArith and produces String of the expression
+class PrintVisitor implements IArithVisitor<String> {
+    // visit Const 
+    public String vConst(Const c) {
+        return Double.toString(c.num);
+    }
+    // visit Formula
+    public String vFormula(Formula f) {
+        return "(" + f.name + " " + f.left.accept(this) + 
+                " " + f.right.accept(this) + ")";
+    }
+}
+
+// visits IArith and produces another IArith
+class DoublerVisitor implements IArithVisitor<IArith> {
+    // visit Const
+    public IArith vConst(Const c) {
+        return new Const(c.num * 2);
+    }
+    // visit Formula
+    public IArith vFormula(Formula f) {
+        return new Formula(f.fun, f.name,
+                f.left.accept(this), f.right.accept(this));
+    }
+}
+
+// visits IArith and produces a Boolean that is true if every constant is 
+// less than 10
+class AllSmallVisitor implements IArithVisitor<Boolean> {
+    // visit Const
+    public Boolean vConst(Const c) {
+        return c.num < 10;
+    }
+    // visit Formula
+    public Boolean vFormula(Formula f) {
+        return f.left.accept(this) && f.right.accept(this);
+    }
+}
+
+
+
+
+
