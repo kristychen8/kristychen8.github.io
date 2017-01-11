@@ -1,1 +1,26 @@
-#turnred{color:red;}
+
+.parallaxE {
+    /* The image used */
+    background-image: url('#');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+	background-image: 
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.5),
+	      rgba(0, 0, 0, 0.5)
+	    ),
+	    url('photos/profile.jpg');
+
+  	background-size: cover;
+  	height: 100vh;
+}
