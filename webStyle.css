@@ -24,3 +24,8 @@
   	background-size: cover;
   	height: 100vh;
 }
+
+.navbar {
+    position: fixed;
+    
+}
