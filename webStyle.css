@@ -1,27 +1,43 @@
-
+/*
 .parallaxE {
-    /* The image used */
     background-image: url('#');
 
-    /* Full height */
     height: 100%; 
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 .home {
 	background-image: 
 	    linear-gradient(
-	      rgba(0, 0, 0, 0.5),
-	      rgba(0, 0, 0, 0.5)
+	      rgba(0, 0, 0, 0.2),
+	      rgba(0, 0, 0, 0.2)
 	    ),
 	    url('photos/profile.jpg');
-
   	background-size: cover;
   	height: 100vh;
+
+}
+
+.navbar {font-family: 'Spinnaker', sans-serif;}
+.aboutme { font-family: 'Spinnaker', sans-serif; text-shadow: 2px 2px 4px #000000;}
+
+.layer {
+    background-color:#FBEEE6;
+    height:20px;
+}
+
+footer{
+    height:100px;
+    background-color:#021E24;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+
+    font-family: 'Spinnaker', sans-serif;
 }
 
