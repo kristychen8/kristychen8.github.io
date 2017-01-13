@@ -9,12 +9,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }*/
-
 .home {
 	background-image: 
 	    linear-gradient(
-	      rgba(0, 0, 0, 0.2),
-	      rgba(0, 0, 0, 0.2)
+	      rgba(0, 0, 0, 0.3),
+	      rgba(0, 0, 0, 0.3)
 	    ),
 	    url('photos/profile.jpg');
   	background-size: cover;
@@ -24,7 +23,6 @@
 
 .navbar {
     font-family: 'Spinnaker', sans-serif;
-    margin-bottom: 0;
 }
 
 .aboutme { font-family: 'Spinnaker', sans-serif; text-shadow: 2px 2px 4px #000000;}
@@ -45,3 +43,7 @@ footer{
     font-family: 'Spinnaker', sans-serif;
 }
 
+.navbar-nav li a {
+    height: 70px;
+    padding-top: 0;
+}
