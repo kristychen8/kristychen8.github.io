@@ -8,24 +8,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}*/
-.home {
-	background-image: 
-	    linear-gradient(
-	      rgba(0, 0, 0, 0.3),
-	      rgba(0, 0, 0, 0.3)
-	    ),
-	    url('photos/profile.jpg');
-  	background-size: cover;
-  	height: 100vh;
+    }*/
 
+.home {
+    background-image: 
+    linear-gradient(
+     rgba(0, 0, 0, 0.3),
+     rgba(0, 0, 0, 0.3)
+     ),
+    url('photos/profile.jpg');
+    background-size: cover;
+/*  	height: 100vh; */
 }
 
 .navbar {
     font-family: 'Spinnaker', sans-serif;
 }
 
-.aboutme { font-family: 'Spinnaker', sans-serif; text-shadow: 2px 2px 4px #000000;}
+.aboutme { 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Spinnaker', sans-serif; 
+    text-shadow: 2px 2px 4px #000000; 
+}
+
+.helloworld {
+    padding-top: 100px;
+    font-family: 'Spinnaker', sans-serif; 
+    text-shadow: 2px 2px 4px #000000; 
+
+}
 
 .layer {
     background-color:#e3f2fd;
@@ -41,4 +53,5 @@ footer{
     margin-bottom:0px;
 
     font-family: 'Spinnaker', sans-serif;
+
 }
