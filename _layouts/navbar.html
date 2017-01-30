@@ -32,7 +32,7 @@
         				<li><a href="http://kristychen8.github.io">Home</a></li>
         				<li><a href="http://kristychen8.github.io/education.html">Education</a></li>
         				<li><a href="https://github.com/kristychen8">Github</a></li>
-        				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+        				<li><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
 					          <ul class="dropdown-menu">
 					          	<li><a href="https://github.com/kristychen8/SplitWebApp">Split App</a></li>
 					            <li><a href="https://github.com/kristychen8/Create-Your-Own-Website">Create-Your-Own-Website</a></li>
@@ -55,5 +55,12 @@
 			</nav>
 		</div> <!-- /.home -->
 		{{content}}
+		<script src="content/js/jquery.min.js"></script>
+		<script src="content/js/bootstrap.min.js"></script>
+		<script>
+		    $(document).ready(function () {
+		        $('.dropdown-toggle').dropdown();
+		    });
+		</script>
 	</body>
 </html>
