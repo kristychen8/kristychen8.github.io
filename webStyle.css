@@ -9,6 +9,7 @@
      ),
     url('photos/profile.jpg');
     background-size: cover;
+    background-position: center;
    /* height: 100vh;*/ /* FIX */
 }
 
@@ -34,7 +35,7 @@
 }
 
 .layer {
-    background-color:#e3f2fd;
+    background-color:white;
     height:20px;
 }
 
@@ -54,7 +55,7 @@ footer{
     EDUCATION PAGE
 **********************/
 .edu {
-    background-image: url('photos/ny.jpg');
+    background-image: url('photos/ny2.jpg');
 }
 
 .title {
@@ -64,6 +65,8 @@ footer{
     padding: 25px;
     letter-spacing: 7px;
     border-radius: 25px;
+    position: absolute;
+
 }
 
 .words {
@@ -72,6 +75,16 @@ footer{
     background-color: #E6F6FB;
     font-family: 'Spinnaker', sans-serif;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: left;
+}
+
 
 .neu {
     background-image: url('photos/nu.jpg');
@@ -91,5 +104,4 @@ footer{
     background-repeat: no-repeat;
     opacity: 0.8;
     padding: 210px;
-
 }
