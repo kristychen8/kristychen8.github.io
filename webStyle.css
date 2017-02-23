@@ -94,7 +94,7 @@ td, th {
     background-image: url('photos/stuy.jpg');
 }
 
-.edu, .neu, .stuy {
+.edu, .neu, .stuy, .leadership, .volunteer {
     width:auto; 
     height: auto;
     background-attachment: fixed;
@@ -105,3 +105,29 @@ td, th {
     opacity: 0.8;
     padding: 210px;
 }
+
+
+/*********************************
+    LEADERSHIP/VOLUNTEER PAGE
+**********************************/
+
+.leadership {
+    background-image: url('photos/nuwit.jpg');
+    background-size: 100% 100%;
+}
+
+.volunteer {
+    background-image: url('photos/gwc.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
