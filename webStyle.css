@@ -2,7 +2,7 @@
     HOME PAGE
 **********************/
 .home {
-    background-image: 
+    background-image:
     linear-gradient(
      rgba(0, 0, 0, 0.3),
      rgba(0, 0, 0, 0.3)
@@ -21,17 +21,17 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
-    font-family: 'Spinnaker', sans-serif; 
-    text-shadow: 2px 2px 4px #000000; 
+    font-family: 'Spinnaker', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.aboutme { 
+.aboutme {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Spinnaker', sans-serif; 
-    text-shadow: 2px 2px 4px #000000; 
+    font-family: 'Spinnaker', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .layer {
@@ -95,7 +95,7 @@ td, th {
 }
 
 .edu, .neu, .stuy, .leadership, .volunteer {
-    width:auto; 
+    width:auto;
     height: auto;
     background-attachment: fixed;
     position: relative;
@@ -119,15 +119,3 @@ td, th {
 .volunteer {
     background-image: url('photos/gwc.jpg');
 }
-
-
-
-
-
-
-
-
-
-
-
-
