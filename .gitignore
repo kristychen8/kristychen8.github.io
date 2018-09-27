@@ -38,5 +38,3 @@ out/
 *.tar
 *.zip
 
-#Node
-node_modules
