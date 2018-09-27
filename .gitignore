@@ -37,3 +37,6 @@ out/
 *.rar
 *.tar
 *.zip
+
+#Node
+node_modules
