@@ -23,7 +23,7 @@ a:hover {
 
 ul {
     list-style: none;
-    padding-inline-start: 0px;
+    margin-left: -40px;
 }
 
 .container {
@@ -149,11 +149,6 @@ ul {
         margin-bottom: auto;
     }
 
-    .container-skills {
-        flex-flow: column wrap;
-        margin-bottom: auto;
-    }
-
     .intro-tagline {
         text-align: center;
         width: 100%;
@@ -162,5 +157,25 @@ ul {
 
     .intro-portrait {
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-skills {
+        flex-flow: column wrap;
+        margin-bottom: auto;
+    }
+
+
+    .section {
+        padding: 50px 50px 50px 50px;
+    }
+
+    .title-line {
+        margin-left: 0%;
+    }
+
+    #skills {
+        text-align: left;
     }
 }
